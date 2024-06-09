@@ -1,22 +1,31 @@
 import os
 
-# définit les constantes de couleur
+# Color Constants
 COULEUR_BG = "#fefae0"
-COULEUR_TXT ="#283618"
-COULEUR_BTN = "#dda15e"
+COULEUR_TXT = "#283618"
+COULEUR_BTN_BG = "#dda15e"
+COULEUR_BTN_TXT = "#fefae0"
+COULEUR_BTN_HOVER = "#bc883e"
 
-# définit la taille globale du txt modifiée dans les paramètres
-taillePolice = 10
+# Define Global Font Size
+taillePolice = 12
 
-# définit les styles répétitifs
-STYLE_BTN = {"fg": COULEUR_TXT, "bg": COULEUR_BTN}
-STYLE_TXT = {"fg": COULEUR_TXT, "bg": COULEUR_BG}
+# Define Repetitive Styles
+STYLE_BTN = {
+    "fg_color": COULEUR_BTN_BG, 
+    "hover_color": COULEUR_BTN_HOVER,
+    "text_color": COULEUR_BTN_TXT
+}
+STYLE_TXT = {
+    "fg_color": COULEUR_BG, 
+    "text_color": COULEUR_TXT
+}
 STYLE_TITRE = {**STYLE_TXT, "wraplength": 500, "padx": 50, "pady": 75}
 
-# Définit les constantes de chemin
+# Define Path Constants
 CHEMIN_DRAPEAUX = "./images/Drapeaux/"
 
-# Obtient la liste de tous les cartes
+# Get the list of all flags
 LISTE_DRAPEAUX = os.listdir(CHEMIN_DRAPEAUX)
 
 
