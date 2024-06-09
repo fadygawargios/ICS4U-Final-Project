@@ -6,12 +6,12 @@
 #--------------------------------------------------------------------------------
 
 from tkinter import messagebox
-import tkinter as tk
 from common import *
-from fonctions import app, obtenirOptions
+from fonctions import obtenirOptions
+from app import app
 from tktable import Table
 from customtkinter import * 
-from PIL import Image, ImageTk
+import tkinter as tk
 import os
 
 # Crée la fenetre principale basé sur la classe app() dans fonctions.py
@@ -81,7 +81,7 @@ def retroaction(points, réponse, bonneRéponse, objectif, erreurs):
             pageFin(points=points)
 
         root.update()
-        
+
         erreurs += 1
         if points != 0:
             points -= 1
