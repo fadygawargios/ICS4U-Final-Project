@@ -6,6 +6,7 @@ COULEUR_TXT = "#283618"
 COULEUR_BTN_BG = "#dda15e"
 COULEUR_BTN_TXT = "#fefae0"
 COULEUR_BTN_HOVER = "#bc883e"
+CORNER_RADIUS = 50
 
 # Define Global Font Size
 taillePolice = 12
@@ -14,8 +15,10 @@ taillePolice = 12
 STYLE_BTN = {
     "fg_color": COULEUR_BTN_BG, 
     "hover_color": COULEUR_BTN_HOVER,
-    "text_color": COULEUR_BTN_TXT
+    "text_color": COULEUR_BTN_TXT,
+    "corner_radius" : CORNER_RADIUS
 }
+
 STYLE_TXT = {
     "fg_color": COULEUR_BG, 
     "text_color": COULEUR_TXT

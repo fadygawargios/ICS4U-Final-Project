@@ -18,6 +18,7 @@ class choixTxt():
         self._dictTaillePolice[str(self.txtNom).split(".!")[-1]] = fontSize
 
     # Method that retrieves the info written in the entry
+    @property
     def réponse(self):
         return self.txtNom.get()
 
